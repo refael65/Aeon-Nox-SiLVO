@@ -150,19 +150,20 @@
 	</include>
 	<!-- TV Shows Next Aired script -->
 	<include name="TVNextAiredListCommonLayout">
-		<left>522</left>
-		<top>12</top>
-		<width>1316</width>
+		<left>57</left>
+		<top>102</top>
+		<width>1806</width>
 		<height>840</height>
-		<onup>60</onup>
+		<onup>9000</onup>
 		<ondown>60</ondown>
 		<onleft>9000</onleft>
+		<onright>9000</onright>
 		<orientation>horizontal</orientation>
 		<scrolltime tween="quadratic">300</scrolltime>
 		<pagecontrol>60</pagecontrol>
-		<itemlayout height="840" width="435">
+		<itemlayout height="840" width="451.5">
 			<control type="image">
-				<left>15</left>
+				<left>23.25</left>
 				<top>20</top>
 				<width>405</width>
 				<height>237</height>
@@ -170,7 +171,7 @@
 				<texture background="true">$INFO[ListItem.Property(Art(clearlogo))]</texture>
 			</control>
 			<control type="textbox">
-				<left>15</left>
+				<left>23.25</left>
 				<top>250</top>
 				<width>405</width>
 				<height>130</height>
@@ -180,7 +181,7 @@
 				<autoscroll>false</autoscroll>
 			</control>
 			<control type="textbox">
-				<left>15</left>
+				<left>23.25</left>
 				<top>400</top>
 				<width>405</width>
 				<height>130</height>
@@ -192,7 +193,7 @@
 			<control type="label">
 				<description>Episode Number</description>
 				<top>550</top>
-				<width>435</width>
+				<width>451.5</width>
 				<height>45</height>
 				<label>$LOCALIZE[126]:</label>
 				<textcolor>$VAR[ThemeLabelColor]</textcolor>
@@ -202,7 +203,7 @@
 			<control type="label">
 				<description>Episode Number</description>
 				<top>595</top>
-				<width>435</width>
+				<width>451.5</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Property(Status)]</label>
 				<textcolor>grey2</textcolor>
@@ -212,7 +213,7 @@
 			<control type="label">
 				<description>Episode Number</description>
 				<top>700</top>
-				<width>435</width>
+				<width>451.5</width>
 				<height>45</height>
 				<label>$LOCALIZE[31012]:</label>
 				<textcolor>$VAR[ThemeLabelColor]</textcolor>
@@ -222,7 +223,7 @@
 			<control type="label">
 				<description>Episode Number</description>
 				<top>745</top>
-				<width>435</width>
+				<width>451.5</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(Network), @ ]</label>
 				<textcolor>grey2</textcolor>
@@ -230,17 +231,17 @@
 				<font>font15</font>
 			</control>
 		</itemlayout>
-		<focusedlayout height="840" width="435">
+		<focusedlayout height="840" width="451.5">
 			<control type="image">
 				<top>20</top>
-				<width>435</width>
+				<width>451.5</width>
 				<height>810</height>
 				<texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
 				<visible>ControlGroup(9001).HasFocus()</visible>
 				<include>VisibleFadeAnimation</include>
 			</control>
 			<control type="image">
-				<left>15</left>
+				<left>23.25</left>
 				<top>20</top>
 				<width>405</width>
 				<height>237</height>
@@ -248,7 +249,7 @@
 				<texture background="true">$INFO[ListItem.Property(Art(clearlogo))]</texture>
 			</control>
 			<control type="textbox">
-				<left>15</left>
+				<left>23.25</left>
 				<top>250</top>
 				<width>405</width>
 				<height>130</height>
@@ -257,7 +258,7 @@
 				<autoscroll>false</autoscroll>
 			</control>
 			<control type="textbox">
-				<left>15</left>
+				<left>23.25</left>
 				<top>400</top>
 				<width>405</width>
 				<height>130</height>
@@ -268,7 +269,7 @@
 			<control type="label">
 				<description>Episode Number</description>
 				<top>550</top>
-				<width>435</width>
+				<width>451.5</width>
 				<height>45</height>
 				<label>$LOCALIZE[126]:</label>
 				<textoffsetx>15</textoffsetx>
@@ -277,7 +278,7 @@
 			<control type="label">
 				<description>Episode Number</description>
 				<top>595</top>
-				<width>435</width>
+				<width>451.5</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Property(Status)]</label>
 				<textoffsetx>15</textoffsetx>
@@ -286,7 +287,7 @@
 			<control type="label">
 				<description>Episode Number</description>
 				<top>700</top>
-				<width>435</width>
+				<width>451.5</width>
 				<height>45</height>
 				<label>$LOCALIZE[31012]:</label>
 				<textoffsetx>15</textoffsetx>
@@ -295,7 +296,7 @@
 			<control type="label">
 				<description>Episode Number</description>
 				<top>745</top>
-				<width>435</width>
+				<width>451.5</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(Network), @ ]</label>
 				<textoffsetx>15</textoffsetx>
